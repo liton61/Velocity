@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 50px;
+}
+
+.title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.subhanAllah-container,
+.alhamdulillah-container,
+.allahuAkber-container {
+    display: flex;
+    gap: 20px;
+}
+
+.container>div {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.container>div>div {
+    margin-bottom: 10px;
+}
+
+h5 {
+    margin: 0;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+p {
+    margin: 0;
+    font-size: 24px;
+    text-align: center;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#subhanAllahIncrementBtn,
+#alhamdulillahIncrementBtn,
+#allahuAkberIncrementBtn {
+    background-color: #28a745;
+    /* Green color for increment buttons */
+    color: #fff;
+}
+
+#subhanAllahDecrementBtn,
+#alhamdulillahDecrementBtn,
+#allahuAkberDecrementBtn {
+    background-color: #dc3545;
+    /* Red color for decrement buttons */
+    color: #fff;
+}
+
+.resetContainer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.resetContainer button {
+    background-color: #dc3545;
+    color: white;
+}
